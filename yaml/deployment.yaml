@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: studentapp
-          image: 753093280022.dkr.ecr.ap-northeast-1.amazonaws.com/student-app:${IMAGE_TAG}
+          image: 753093280022.dkr.ecr.ap-northeast-1.amazonaws.com/student-app:${BUILD_NUMBER}
           ports: 
             - containerPort: 8080
             
