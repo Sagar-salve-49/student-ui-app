@@ -67,13 +67,26 @@
     </snapshotRepository>
   </distributionManagement>
 
-  <dependencies>
+ <dependencies>
+
+    <!-- Servlet API -->
     <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.0.1</version>
-      <scope>provided</scope>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
+        <scope>provided</scope>
     </dependency>
-  </dependencies>
+
+    <!-- Spring Test (for MockMvc, RequestBuilder, etc.) -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-test</artifactId>
+        <version>5.3.30</version>
+        <scope>test</scope>
+    </dependency>
+
+</dependencies>
+
 
 </project>
+
